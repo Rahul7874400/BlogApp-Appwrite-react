@@ -1,0 +1,22 @@
+import React from "react";
+import { Link } from "react-router-dom"
+import databaseService from "../appwrite/config"
+
+
+function PostCard({
+    $id,
+    title,
+    featuredImage
+}){
+
+    <Link to={`/post/${$id}`}>
+        <div className="w-full bg-gray-500 p-4 rounded-xl">
+            <div className="w-full justify-center md-4">
+                <img src={databaseService.getFilePreview(featuredImage)} 
+                alt={title} 
+                className="rounded-xl"/>
+            </div>
+            <h2 className="text-xl font-bold">  {title} </h2>
+        </div>
+    </Link>
+}

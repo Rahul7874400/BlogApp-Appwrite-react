@@ -1,12 +1,11 @@
 import React ,{useState} from "react";
-import { Form, Link , useNavigate } from "react-router-dom"
+import { Link , useNavigate } from "react-router-dom"
 import { Logo , Button , Input } from "./index"
 import { useDispatch } from "react-redux";
-import  AuthService  from "../appwrite/auth";
 import { login as authLogin } from "../store/authSlice";
 import { useForm } from "react-hook-form"
 import authService from "../appwrite/auth";
-import { executeReducerBuilderCallback } from "@reduxjs/toolkit/dist/mapBuilders";
+
 
 
 function Login(){
@@ -59,7 +58,7 @@ function Login(){
                     <Input 
                     label = "Email :"
                     palceHolder = "Enter the Email"
-                    type = "Email"
+                    type = "email"
                     {...register( "email",{
                         required : true,
                         validate : {

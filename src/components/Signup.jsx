@@ -75,7 +75,7 @@ function Signup(){
                         />
                         <Input
                         label = "Password :"
-                        type = "passeord"
+                        type = "password"
                         placeholder = "Enter the password"
                         {...register("password" , {
                             required : true

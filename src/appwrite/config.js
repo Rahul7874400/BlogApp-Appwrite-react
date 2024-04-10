@@ -31,7 +31,7 @@ export class DatabaseService {
                 }
             )
         } catch (error) {
-            throw error
+            console.log("Error during create post",error)
         }
     }
 
@@ -49,7 +49,7 @@ export class DatabaseService {
                 }
             )
         } catch (error) {
-            throw error
+            console.log("Error during update post",error)
         }
     }
 
@@ -62,7 +62,7 @@ export class DatabaseService {
             )
             return true
         } catch (error) {
-            throw error
+            console.log("Error during delete post",error)
             return false
         }
     }
@@ -87,7 +87,7 @@ export class DatabaseService {
                 queries
             )
         } catch (error) {
-            throw error
+            console.log("Error during get post",error)
         }
     }
 
@@ -99,7 +99,7 @@ export class DatabaseService {
                 file
             )
         } catch (error) {
-            throw error
+            console.log("Error during upload file",error)
         }
     }
 
@@ -111,7 +111,7 @@ export class DatabaseService {
             )
             return true
         } catch (error) {
-            throw error
+            console.log("Error during delete file",error)
             return false
         }
     }

@@ -10,7 +10,7 @@ function LogOutBtn() {
     const logoutHandler = ()=>{
         authService.logout()
         .then( () =>{
-            dispatch(logOut)
+            dispatch(logOut())
         } )
         .catch( (error)=>{
             console.log("Something went worng while logouting " ,error)

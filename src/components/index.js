@@ -7,6 +7,11 @@ import Button from "./Button"
 import Input from "./Input"
 import RTE from "./RTE"
 import Select from "./Select"
+import Singup from "./Signup"
+import Login from "./Login"
+import AuthLayout from "./AuthLayout"
+import PostForm from "./Post-Form/PostForm"
+import PostCard from "./PostCard"
 
 
 
@@ -19,5 +24,10 @@ export {
     Button,
     Input,
     RTE,
-    Select
+    Select,
+    Singup,
+    Login,
+    AuthLayout,
+    PostForm,
+    PostCard
 }

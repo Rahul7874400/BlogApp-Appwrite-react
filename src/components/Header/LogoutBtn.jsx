@@ -1,6 +1,6 @@
 import React ,{ useDispatch } from "react";
 import  authService from "../../appwrite/auth"
-import { logOut } from "../../store/authSlice"
+import { logout } from "../../store/authSlice"
 
 
 
@@ -10,7 +10,7 @@ function LogOutBtn() {
     const logoutHandler = ()=>{
         authService.logout()
         .then( () =>{
-            dispatch(logOut())
+            dispatch(logout())
         } )
         .catch( (error)=>{
             console.log("Something went worng while logouting " ,error)

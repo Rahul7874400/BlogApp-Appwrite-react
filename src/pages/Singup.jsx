@@ -1,8 +1,8 @@
 import React from "react";
-import { Singup, Singup as SingupComponent } from "../components";
+import { Singup as SingupComponent } from "../components";
 
 
-function Sinup(){
+function Singup(){
 
     return (
         <div className="py-8">

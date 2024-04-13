@@ -1,6 +1,6 @@
 import React from "react";
 import { Login as LoginComponent } from "../components";
-import { login } from "../store/authSlice";
+
 
 
 
@@ -13,4 +13,4 @@ function Login(){
     )
 }
 
-export default login
+export default Login
